@@ -352,7 +352,8 @@ button {
     }
 
     .hobbies__imagens {
-        max-width: 224px;
+        max-width: 156px;
+        height: auto;
     }
 
     .formacao__academica {
