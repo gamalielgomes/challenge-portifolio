@@ -59,44 +59,34 @@
     padding: 0px 152px;
 }
 
-.skills__container__apresentacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-}
-
 .skills__container__imagens {
     display: flex;
-    gap: 10px;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 32px;
 }
 
 .skills__imagens {
-    max-width: 100%;
+    max-width: 202px;
     height: auto;
     flex: 1 0 0px;
 }
 
 .hobbies {
+    margin-top: 32px;
     text-align: center;
-    padding: 88px 152px;
-}
-
-.hobbies__container__apresentacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
+    padding: 0px 152px;
 }
 
 .hobbies__container__imagens {
     display: flex;
-    justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 32px;
 }
 
 .hobbies__imagens {
-    max-width: 100%;
+    max-width: 202px;
     height: auto;
     flex: 1 0 0px;
 }
@@ -115,48 +105,6 @@
 .formacao__containers__geral {
     display: flex;
     gap: 16px;
-}
-
-.formacao__containers__apresentacao {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-}
-
-.formacao__containers__imagens {
-    width: 100%;
-    height: 100%;
-}
-
-.formacao__subtitulos {
-    width: 100%;
-}
-
-.formacao__paragrafo {
-    width: 100%;
-}
-
-.formacao__containers__apresentacao {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-}
-
-.formacao__containers__imagens {
-    width: 100%;
-    height: 100%;
-}
-
-.formacao__subtitulos {
-    width: 100%;
-}
-
-.formacao__paragrafo {
-    width: 100%;
 }
 
 .formacao__containers__apresentacao {
@@ -348,12 +296,6 @@ button {
 
     .hobbies__container__imagens {
         gap: 32px 16px;
-        flex-wrap: wrap;
-    }
-
-    .hobbies__imagens {
-        max-width: 156px;
-        height: auto;
     }
 
     .formacao__academica {
@@ -406,8 +348,12 @@ button {
         align-items: start;
     }
 
+    .apresentacao__container__paragrafo {
+        width: 100%;
+    }
+
     .container__sites {
-        gap: 8px;
+        gap: 6px;
     }
 
     .skills__container__imagens {
@@ -421,6 +367,10 @@ button {
     .hobbies__container__imagens {
         display: flex;
         gap: 32px 16px;
+    }
+
+    .hobbies__imagens {
+        max-width: 165px;
     }
     
     .formacao__containers__geral {
