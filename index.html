@@ -167,20 +167,26 @@
                 <p class="formulario__paragrafo">Quer entrar em contato comigo?<br>
                 preencha o formulário a baixo e entrarei em contato o mais rápido possível.</p>
             </div>
-            <form class="formulario__secoes" action="" method="get">
+            <form id="form" class="formulario__secoes" action="" method="get">
                 <div class="container__label__input">
-                    <label class="label" for="nome">Nome</label>
-                    <input class="formulario__inputs" type="text" name="name" id="nome">
+                    <input class="formulario__inputs required" maxlength="50" placeholder="Nome" type="text" name="name" id="nome" oninput="nomeValidate()">
+                    <label class="label__nome" for="name">Este campo não deve ficar em branco ou vazio. Deve conter no máximo 50 caracteres.</label>
                 </div>
                 <div class="container__label__input">
-                    <label class="label" for="email">E-mail</label>
-                    <input class="formulario__inputs" type="email" name="email" id="email">
+                    <input class="formulario__inputs required" placeholder="E-mail" type="email" name="email" id="email" oninput="emailValidate()">
+                    <label class="label__email" for="email">O campo do e-mail não deve ficar em branco ou vazio.
+                        Deve estar em formato de e-mail contendo o caractere especial @ seguido por um domínio ou provedor seguido por um ponto (.)
+                        Exemplo: text@texto.com</label>
                 </div>
                 <div class="container__label__input">
                     <input class="formulario__assunto" type="text" name="assunto" id="assunto" placeholder="Assunto">
+                    <label for="assunto">O campo Assunto não deve ficar em branco ou vazio.
+                        Deve conter no máximo 50 caracteres.</label>
                 </div>
                 <div class="container__label__input" id="mensagem">
                     <textarea class="container__mensagem" rows="10" id="mensagem" placeholder="Mensagem"></textarea>
+                    <label for="mensagem">O campo da mensagem não deve ficar em branco ou vazio.
+                        Deve conter no máximo 300 caracteres.</label>
                 </div>
                 <div>
                     <button type="submit">Enviar mensagem</button>
@@ -194,5 +200,6 @@
             <p id="texto__footer"><strong>Desenvolvido por Gamaliel Gomes<br>2024</strong></p>
         </footer>
     </section>
+    <Script src="validate.js"></Script>
 </body>
 </html>
