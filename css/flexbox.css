@@ -195,8 +195,9 @@
 
 .secao__contato {
     display: flex;
-    padding: 128px 152px;
+    padding: 128px 0px;
     gap: 16px;
+    justify-content: center;
 }
 
 .formulario__secoes {
