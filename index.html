@@ -106,24 +106,31 @@
         <h2 class="formacao__titulo"><strong>Formação acadêmica</strong></h2>
         <div class="formacao__containers__geral">
             <div class="formacao__containers__apresentacao">
-                <img class="formacao__containers__imagens" src="imagens/formacao/Imagem1.png" alt="logo UFPR">
+                <img class="formacao__containers__imagens" src="imagens/formacao/Imagem2.png" alt="logo Alura">
                 <div class="formacao__containers__textos">
-                    <h3 class="formacao__subtitulos">Análise de dados</h3>
-                    <p class="formacao__paragrafo">2018 - UFPR</p>
+                    <h3 class="formacao__subtitulos">Formação Empreededorismo - ONE</h3>
+                    <p class="formacao__paragrafo">2024 - Alura</p>
                 </div>
             </div>
             <div class="formacao__containers__apresentacao">
                 <img class="formacao__containers__imagens" src="imagens/formacao/Imagem2.png" alt="logo Alura">
                 <div class="formacao__containers__textos">
-                    <h3 class="formacao__subtitulos">Formação UX Design</h3>
-                    <p class="formacao__paragrafo">2019 - Alura</p>
+                    <h3 class="formacao__subtitulos">Front End T6 - ONE</h3>
+                    <p class="formacao__paragrafo">2024 - Alura</p>
                 </div>
             </div>
             <div class="formacao__containers__apresentacao">
-                <img class="formacao__containers__imagens" src="imagens/formacao/Imagem3.png" alt="logo UFRJ">
+                <img class="formacao__containers__imagens" src="imagens/formacao/Imagem2.png" alt="logo Alura">
                 <div class="formacao__containers__textos">
-                    <h3 class="formacao__subtitulos">Pós-graduação design</h3>
-                    <p class="formacao__paragrafo">Em andamento - UFRJ</p>
+                    <h3 class="formacao__subtitulos">Desenvolvimento Pessoal T6 - ONE</h3>
+                    <p class="formacao__paragrafo">2024 - Alura</p>
+                </div>
+            </div>
+            <div class="formacao__containers__apresentacao">
+                <img class="formacao__containers__imagens" src="imagens/formacao/Imagem2.png" alt="logo Alura">
+                <div class="formacao__containers__textos">
+                    <h3 class="formacao__subtitulos">Iniciante em Programação T6 - ONE</h3>
+                    <p class="formacao__paragrafo">2024 - Alura</p>
                 </div>
             </div>
         </div>
@@ -168,26 +175,25 @@
                 preencha o formulário a baixo e entrarei em contato o mais rápido possível.</p>
             </div>
             <form id="form" class="formulario__secoes" action="" method="get">
+
                 <div class="container__label__input">
-                    <input class="formulario__inputs required" maxlength="50" placeholder="Nome" type="text" name="name" id="nome" oninput="nomeValidate()">
-                    <label class="label__nome" for="name">Este campo não deve ficar em branco ou vazio. Deve conter no máximo 50 caracteres.</label>
+                    <label>Nome</label>
+                    <input type="text" nome="Nome" placeholder="Digite seu nome..." required>
                 </div>
+
                 <div class="container__label__input">
-                    <input class="formulario__inputs required" placeholder="E-mail" type="email" name="email" id="email" oninput="emailValidate()">
-                    <label class="label__email" for="email">O campo do e-mail não deve ficar em branco ou vazio.
-                        Deve estar em formato de e-mail contendo o caractere especial @ seguido por um domínio ou provedor seguido por um ponto (.)
-                        Exemplo: text@texto.com</label>
+                    <label>E-mail</label>
+                    <input type="email" nome="Email" placeholder="exemplo@gmail.com" required>
                 </div>
+                
                 <div class="container__label__input">
-                    <input class="formulario__assunto" type="text" name="assunto" id="assunto" placeholder="Assunto">
-                    <label for="assunto">O campo Assunto não deve ficar em branco ou vazio.
-                        Deve conter no máximo 50 caracteres.</label>
+                    <input class="imput-assunto" type="text" nome="Assunto" placeholder="Assunto" required>
                 </div>
-                <div class="container__label__input" id="mensagem">
-                    <textarea class="container__mensagem" rows="10" id="mensagem" placeholder="Mensagem"></textarea>
-                    <label for="mensagem">O campo da mensagem não deve ficar em branco ou vazio.
-                        Deve conter no máximo 300 caracteres.</label>
+
+                <div class="container__label__input mensagem">
+                    <textarea name="mensagem" id="" placeholder="Mensagem" required></textarea>
                 </div>
+
                 <div>
                     <button type="submit">Enviar mensagem</button>
                 </div>
