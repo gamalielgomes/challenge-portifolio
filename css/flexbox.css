@@ -61,6 +61,7 @@
 
 .skills__container__imagens {
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
     margin-top: 32px;
@@ -80,6 +81,7 @@
 
 .hobbies__container__imagens {
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
     margin-top: 32px;
@@ -362,7 +364,7 @@ button {
     }
 
     .skills__imagens {
-        width: 156px;
+        max-width: 165px;
     }
 
     .hobbies__container__imagens {
